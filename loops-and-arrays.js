@@ -3,7 +3,7 @@
 // Schrijf een script dat iedere naam in onderstaande array vervangt door een koosnaampje, door er -"je" achter te plakken.
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
-
+console.log(" ================= Opdracht 1 =========================")
 const names = ["Henk", "Piet", "Fred", "Joop"];
 
 // Verwachtte uitkomsten:
@@ -12,25 +12,44 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
+console.log(names);
 
+for (let i = 0; i < names.length; i++) {
 
+    names[i] = names[i] + "je";
+}
+
+console.log(names);
 
 // ==========================================
 // Opdracht 2
 // Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
-
+console.log(" ================= Opdracht 2 =========================")
 const numbers = [2, 4, 5, 29, 38];
 
+console.log(numbers);
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 4, 8, 15, 87, 76 ];
 
+for (let i = 0; i < numbers.length; i++) {
+    
+    if (numbers[i] % 2 !== 0) {
+        // Oneven getal uitkomst
+        numbers[i] = numbers[i] * 3;
 
+    } else {
+        // even getal uitkomst
+        numbers[i] = numbers[i] * 2;
+    }
 
+    }
+
+    console.log(numbers);
 
 // ==========================================
 // Opdracht 3
@@ -40,8 +59,10 @@ const numbers = [2, 4, 5, 29, 38];
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
+console.log(" ================= Opdracht 3 =========================")
 const squares = [30, 2, 8, 24, 11];
 
+console.log(squares);
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(squares) geeft: [30, 2, 8, 24, 11];
@@ -53,3 +74,13 @@ const squares = [30, 2, 8, 24, 11];
 //   'Het volume van 24 is 13824',
 //   'Het volume van 11 is 1331'
 // ]
+
+for (let i = 0; i < squares.length; i++) {
+
+    const volume = squares[i] * squares[i] * squares[i];
+
+    squares[i] = "Het volume van " + squares[i] + " is " + volume;
+
+}
+
+console.log(squares);
