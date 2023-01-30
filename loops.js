@@ -9,11 +9,11 @@
 console.log(" ================= Opdracht 1 =========================")
 
 
-const juichen = "Hoera!";
+const cheer = "Hoera!";
 
 for (let i = 0; i < 3; i++) {
   
-  console.log(juichen);
+  console.log(cheer);
 }
 
 // ==========================================
@@ -100,3 +100,4 @@ for (let i = 0; i <= 9; i++) {
   }
 
 }
+
